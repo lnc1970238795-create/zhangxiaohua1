@@ -1,0 +1,171 @@
+/* App.css */
+.ant-layout {
+  min-height: 100vh;
+}
+
+.ant-layout-header {
+  display: flex;
+  align-items: center;
+  background-color: #001529;
+}
+
+.ant-layout-content {
+  padding: 24px;
+  margin: 0;
+  min-height: 280px;
+}
+
+/* 模块通用样式 */
+.module-container {
+  padding: 20px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* 表单样式 */
+.form-item {
+  margin-bottom: 16px;
+}
+
+/* 按钮样式 */
+.btn-primary {
+  margin-right: 8px;
+}
+
+/* 卡片样式 */
+.card {
+  margin-bottom: 16px;
+}
+
+/* 表格样式 */
+.table-container {
+  margin-top: 20px;
+}
+
+/* 加载动画 */
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+  .ant-layout-content {
+    padding: 12px;
+  }
+  
+  .module-container {
+    padding: 12px;
+  }
+  
+  .ant-layout-sider {
+    width: 180px !important;
+  }
+  
+  h2 {
+    font-size: 18px;
+  }
+  
+  .ant-card {
+    margin-bottom: 12px;
+  }
+  
+  .ant-form-item {
+    margin-bottom: 12px;
+  }
+  
+  .ant-btn {
+    margin-bottom: 8px;
+  }
+  
+  /* 调整表格显示 */
+  .ant-table {
+    font-size: 12px;
+  }
+  
+  .ant-table-column-title {
+    font-size: 12px;
+  }
+  
+  /* 调整聊天界面 */
+  .ant-card-body {
+    padding: 12px;
+  }
+  
+  /* 调整趋势分析图表 */
+  .chart-container {
+    height: 300px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .ant-layout-sider {
+    display: none;
+  }
+  
+  .ant-layout-content {
+    margin-left: 0 !important;
+  }
+  
+  .ant-btn {
+    width: 100%;
+    margin-right: 0;
+  }
+  
+  .ant-select {
+    width: 100% !important;
+  }
+  
+  .ant-upload-dragger {
+    width: 100% !important;
+  }
+  
+  /* 调整卡片布局 */
+  .ant-card {
+    margin-bottom: 16px;
+  }
+  
+  /* 调整表单布局 */
+  .ant-form {
+    width: 100%;
+  }
+  
+  /* 调整聊天界面 */
+  .ant-list-item {
+    padding: 8px 0;
+  }
+  
+  .ant-textarea {
+    width: 100% !important;
+  }
+}
+
+/* 数据安全相关样式 */
+.security-info {
+  font-size: 12px;
+  color: #999;
+  margin-top: 10px;
+  text-align: center;
+}
+
+/* 响应式表格 */
+.responsive-table {
+  overflow-x: auto;
+}
+
+/* 响应式卡片布局 */
+.responsive-card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 16px;
+}
+
+/* 响应式图表容器 */
+.chart-container {
+  width: 100%;
+  height: 400px;
+  margin: 0 auto;
+}
